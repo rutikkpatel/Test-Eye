@@ -1,0 +1,53 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("images/eye-bg.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.inner-text{
+  width: 33.5%;
+  /*border: 1px solid red;*/
+  border-radius: 50%;
+  position: absolute;
+  top: 18.3%;
+  left: 39.9%;
+  /*transform: translate(-50%, -50%);*/
+  animation: inner-rotation 17s infinite linear;
+}
+
+@keyframes inner-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.outer-text{
+  width: 41%;
+  /*border: 1px solid red;*/
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 36.3%;
+  animation: outer-rotation 17s infinite linear;
+}
+
+
+@keyframes outer-rotation {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
